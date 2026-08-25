@@ -42,7 +42,7 @@ const LEVEL_CONFIGS = [
 ]
 /*-- TEMA MAR --*/
 //fondo, create, update, draw
-funciton marFondo(ctx, diff) {
+function marFondo(ctx, diff) {
   let image = new Image();
   image.src = 'assets/fondo-1.png'
 
