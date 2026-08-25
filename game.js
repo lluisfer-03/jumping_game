@@ -42,12 +42,9 @@ class Game {
     this.currentLevelIndex = 0;
     this.levelBannerTimer = 0;
 
-    this.loadLevel(currentLevelIndex);
+    this.loadLevel(this.currentLevelIndex);
 
     this.diff = 0;
-
-    this.bgX = 0;
-    this.bgY = 0;
 
     //Inicia el bucle del juego
     this.start();
@@ -109,8 +106,8 @@ class Game {
   draw() {
     this.clear();
 
-    this.ctx.fillStyle = '#3E5EA3';
-    this.ctx.fillRect(this.bgX, this.bgY, this.canvas.width, this.canvas.height);
+    //Dibujamos fondo
+    marFondo(this.ctx, this.diff);
     
     this.player.draw(this.ctx);
     this.platforms.forEach(platform => platform.draw(this.ctx, this.currentLevelIndex));
