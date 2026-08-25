@@ -41,6 +41,24 @@ const LEVEL_CONFIGS = [
   }
 ]
 /*-- TEMA MAR --*/
+//fondo, create, update, draw
+funciton marFondo(ctx, diff, direction) {
+  let image = new Image();
+  image.src = 'assets/fondo-1.png'
+
+  let bgY;
+  let bgX;
+  if(direction === 'up') {
+    bgY = -938 + (diff / 5);
+    bgX = 0;
+  } else {
+    bgY = 0;
+    bgX = 0 + (diff / 5);
+  }
+
+  ctx.drawImage(image, bgX, bgY, 400, 938);
+}
+//-----------------------------------------------
 function marDraw(ctx, p) {
 let marImage = new Image();
 marImage.src = 'assets/platf-mar-1.png';
@@ -86,7 +104,7 @@ const bubble = new Image();
   ctx.fillRect(p.x, p.y, p.width, 4);*/
   
 }
-//-----------------------
+//-----------------------------------------------
 function marPlatforms(config) {
   if(config.isBreak) {
     config.piezas = [
@@ -103,7 +121,7 @@ function marPlatforms(config) {
 
   return new Platform(config);
 }
-//-----------------------
+//-----------------------------------------------
 function marUpdate(p) {
   //Modificamos piezas de Plataforma Break
   //if(!p.piezas || p.touch !== 1) return;
