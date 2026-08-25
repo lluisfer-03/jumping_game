@@ -51,7 +51,6 @@ function marFondo(ctx, diff) {
   bgY = -938 + (diff / 5);
 	bgX = 0;
 */
-	console.log('pasa por aquí y devuelve image.src = ' + image.src);
   ctx.drawImage(image, 0, -938, 400, 938);
 }
 //-----------------------------------------------
