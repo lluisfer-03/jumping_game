@@ -46,12 +46,12 @@ function marFondo(ctx, diff) {
   let image = new Image();
   image.src = 'assets/fondo-1.png'
 
-  let bgY;
+ /* let bgY;
   let bgX;
   bgY = -938 + (diff / 5);
 	bgX = 0;
-
-  ctx.drawImage(image, bgX, bgY, 400, 938);
+*/
+  ctx.drawImage(image, 0, -938, 400, 938);
 }
 //-----------------------------------------------
 function marDraw(ctx, p) {
