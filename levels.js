@@ -42,19 +42,14 @@ const LEVEL_CONFIGS = [
 ]
 /*-- TEMA MAR --*/
 //fondo, create, update, draw
-funciton marFondo(ctx, diff, direction) {
+funciton marFondo(ctx, diff) {
   let image = new Image();
   image.src = 'assets/fondo-1.png'
 
   let bgY;
   let bgX;
-  if(direction === 'up') {
-    bgY = -938 + (diff / 5);
-    bgX = 0;
-  } else {
-    bgY = 0;
-    bgX = 0 + (diff / 5);
-  }
+  bgY = -938 + (diff / 5);
+	bgX = 0;
 
   ctx.drawImage(image, bgX, bgY, 400, 938);
 }
