@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  border: 2px solid #fff;
+  backgroud-color: #000000;
+  background-image: url('https://img.magnific.com/fotos-premium/fondo-pared-colores-blanco-sombra-caida-dura-aplicando-sombras-pared-renderizacion-3d_573921-793.jpg');
+  background-size: auto 130%;
+  background-position-x: center;
+  background-positoin-y: top;
+  max-width: 100%;
+  max-height: 100vh;
+}
