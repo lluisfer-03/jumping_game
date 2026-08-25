@@ -42,10 +42,8 @@ class Game {
     this.currentLevelIndex = 0;
     this.levelBannerTimer = 0;
 
-    this.loadLevel(0);
+    this.loadLevel(currentLevelIndex);
 
-    //this.direction = 'up'
-    //this.directionCamera(this.direction);
     this.diff = 0;
 
     this.bgX = 0;
